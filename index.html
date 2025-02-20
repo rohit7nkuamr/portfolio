@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] | Game Dev Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background Canvas for Animation -->
+    <canvas id="universeCanvas"></canvas>
+
+    <header>
+        <div class="container">
+            <h1>[Your Name]</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h2>Game Dev Portfolio</h2>
+            <p>Bringing Worlds to Life Through Code and Creativity</p>
+            <button onclick="scrollToSection('portfolio')">Explore My Work</button>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Galactic Defender">
+                    <div class="project-info">
+                        <h3>Galactic Defender</h3>
+                        <p>A 2D space shooter built with Unity. Battle alien fleets across dynamic levels.</p>
+                        <div class="project-links">
+                            <a href="#" class="demo-btn">Play Demo</a>
+                            <a href="#" class="source-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Pixel Quest">
+                    <div class="project-info">
+                        <h3>Pixel Quest</h3>
+                        <p>A retro platformer made with Godot. Jump, run, and save the pixel kingdom.</p>
+                        <div class="project-links">
+                            <a href="#" class="demo-btn">Play Demo</a>
+                            <a href="#" class="source-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Neon Racer">
+                    <div class="project-info">
+                        <h3>Neon Racer</h3>
+                        <p>A fast-paced racing game in Unreal Engine. Speed through neon-lit tracks.</p>
+                        <div class="project-links">
+                            <a href="#" class="demo-btn">Play Demo</a>
+                            <a href="#" class="source-btn">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a game development student passionate about crafting interactive experiences. Skilled in Unity, Godot, and Unreal Engine, I love blending art and code to build games that captivate players.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: your.email@example.com | GitHub: github.com/yourusername | Discord: YourName#1234</p>
+            <p>© 2025 [Your Name]</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
