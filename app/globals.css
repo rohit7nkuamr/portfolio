@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-bg {
+  background: linear-gradient(45deg, #ff4d4d, #ffcc00, #00e0ff, #d400ff);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes starMove {
+  from { transform: translateY(0); }
+  to { transform: translateY(-2000px); }
+}
+
+.stars {
+  background: radial-gradient(#ffffff 1px, transparent 1px) repeat;
+  background-size: 3px 3px;
+  animation: starMove 100s linear infinite;
+}

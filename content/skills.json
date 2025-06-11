@@ -1,0 +1,14 @@
+[
+  { "name": "Unity", "level": "Advanced" },
+  { "name": "C#", "level": "Advanced" },
+  { "name": "C++", "level": "Intermediate" },
+  { "name": "Python", "level": "Intermediate" },
+  { "name": "JavaScript", "level": "Advanced" },
+  { "name": "MERN Stack", "level": "Advanced" },
+  { "name": "React", "level": "Advanced" },
+  { "name": "MongoDB", "level": "Intermediate" },
+  { "name": "Machine Learning", "level": "Beginner" },
+  { "name": "Git & GitHub", "level": "Intermediate" },
+  { "name": "HTML/CSS", "level": "Advanced" },
+  { "name": "SQL/NoSQL", "level": "Intermediate" }
+]
