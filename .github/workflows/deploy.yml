@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 18
           cache: npm
-      - run: npm ci
+      - run: npm install --no-audit --prefer-offline
       - run: npm run build
       - run: npm run export
       - uses: actions/configure-pages@v3
