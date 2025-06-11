@@ -1,32 +1,26 @@
 [
   {
-    "title": "Predictive Racing AI",
-    "description": "AI-powered Unity racing game that adapts to real-time dynamics. Trained AI agents using Unity ML-Agents Toolkit to compete against player behavior.",
+    "title": "BlazeWebsite",
+    "description": "Multi-language restaurant website featuring online ordering, responsive UI, real-time backend, and Python-powered services. Tech stack includes JavaScript, CSS, HTML, Python, and Docker.",
+    "tech": ["JavaScript", "CSS", "HTML", "Python", "Docker"],
+    "link": "https://github.com/rohit7nkuamr/BlazeWebsite"
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "Personal developer portfolio site built with TypeScript, CSS, and JavaScript to showcase projects and skills.",
+    "tech": ["TypeScript", "CSS", "JavaScript"],
+    "link": "https://github.com/rohit7nkuamr/portfolio"
+  },
+  {
+    "title": "PROJECT-ALPHA",
+    "description": "Advanced Python project by ForstvalStudio, focusing on innovative algorithms and data processing.",
+    "tech": ["Python"],
+    "link": "https://github.com/ForstvalStudio/PROJECT-ALPHA"
+  },
+  {
+    "title": "Predictive AI Racing",
+    "description": "AI-powered racing game using Unity ML-Agents to create adaptive competitors. Developed in C# and Unity, exploring real-time AI strategies.",
     "tech": ["Unity", "C#", "ML-Agents"],
-    "link": "https://github.com/rohit7nkuamr/predictive-racing"
-  },
-  {
-    "title": "Fleet Management Application – Indian Army",
-    "description": "Secure web platform for managing army logistics. Used MERN stack and real-time analytics to ensure data security and efficiency.",
-    "tech": ["MongoDB", "Express.js", "React", "Node.js"],
-    "link": "https://github.com/rohit7nkuamr/army"
-  },
-  {
-    "title": "Blaze Restaurant Website",
-    "description": "Responsive and dynamic website for online food ordering. Focused on intuitive UI/UX with real-time backend connectivity.",
-    "tech": ["HTML", "CSS", "JavaScript", "MERN Stack"],
-    "link": "https://github.com/rohit7nkuamr/blaze-restaurant"
-  },
-  {
-    "title": "Waste Management System",
-    "description": "Smart tracking system for municipal waste collection with backend analytics. Improved operational decision-making with real-time data.",
-    "tech": ["Node.js", "MongoDB", "Express", "React"],
-    "link": "https://github.com/rohit7nkuamr/waste-management"
-  },
-  {
-    "title": "Game Development Projects",
-    "description": "Built various game prototypes focused on mechanics, storytelling, and AI features. Optimized for immersive experiences and responsive controls.",
-    "tech": ["Unity", "C#", "Blender"],
-    "link": "https://github.com/rohit7nkuamr"
+    "link": "https://github.com/rohit7nkuamr/Predictive-AI-Racing"
   }
 ]
