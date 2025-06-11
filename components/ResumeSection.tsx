@@ -2,7 +2,20 @@
 import Section from './Section';
 import ResumePreview from './ResumePreview';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+
+// We'll load the ResumeDownloadButton dynamically to avoid SSR issues
+import dynamic from 'next/dynamic';
+
+// Dynamically import the PDF button with no SSR
+const ResumeDownloadButton = dynamic(
+  () => import('./ResumePDF').then(mod => ({ default: mod.ResumeDownloadButton })),
+  { ssr: false, loading: () => (
+    <div className="flex items-center space-x-3 bg-gray-900 text-white px-8 py-4 rounded font-medium w-full justify-center">
+      <span>Preparing Resume...</span>
+    </div>
+  )}
+);
 
 export default function ResumeSection() {
   const [isHovered, setIsHovered] = useState(false);
@@ -108,9 +121,7 @@ export default function ResumeSection() {
                   
                   {/* Button frame */}
                   <div className="relative px-1 py-1 bg-black rounded-lg leading-none flex items-center">
-                    <a
-                      href="/Rohit_Kumar_Resume.pdf"
-                      download
+                    <ResumeDownloadButton 
                       className="flex items-center space-x-3 bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded font-medium transition-all duration-300 w-full justify-center"
                     >
                       <span className="text-accent group-hover:text-white transition-colors duration-300">
@@ -119,7 +130,7 @@ export default function ResumeSection() {
                         </svg>
                       </span>
                       <span>Download Résumé</span>
-                    </a>
+                    </ResumeDownloadButton>
                   </div>
                   
                   {/* Corner decorations */}

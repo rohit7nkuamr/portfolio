@@ -10,6 +10,7 @@
     "deploy": "npm run build && gh-pages -d out"
   },
   "dependencies": {
+    "@react-pdf/renderer": "^4.3.0",
     "framer-motion": "^11.0.4",
     "next": "13.5.2",
     "react": "18.2.0",
