@@ -1,3 +1,4 @@
+
 name: Deploy to GitHub Pages
 
 on:
@@ -26,8 +27,9 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run export
+      - uses: actions/configure-pages@v3
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v2
         with:
           path: ./out
   deploy:
@@ -39,4 +41,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v2
